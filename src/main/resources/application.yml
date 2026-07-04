@@ -7,3 +7,10 @@ management:
     web:
       exposure:
         include: health
+
+langchain4j:
+  ollama:
+    chat-model:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      model-name: ${OLLAMA_MODEL:llama3.2:3b}
+      temperature: 0.7
